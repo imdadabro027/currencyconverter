@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <h1 id="logo">Currency Converter</h1>
+    </header>
+    <!-- Header Ends -->
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+          <label for="quantity">Choose a quantity: </label>
+          <input type="number" name="quantity" min="1" max="10" />
+          <label for="currency">Choose a currency: </label>
+          <select name="currency">
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+          </select>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="output">
+        <h2>Here is your converted values in different currencies</h2>
+        <table aria-describedby="asd">
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Code</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <!-- Main Ends -->
+    <!-- Footer Starts -->
+    <footer>
+      <h3>
+        Copyright &copy; | Currency.com | Afzal Imdad | All Rights reserved
+      </h3>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- Scripts Start -->
+    <script src="app.js"></script>
+    <!-- Scripts Ends -->
+  </body>
+</html>

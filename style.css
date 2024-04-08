@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Start */
+header {
+  padding: 12px 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Header Ends */
+
+/* Main Starts */
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.container h1,
+h2 {
+  margin: 23px 0;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  font-size: 25px;
+}
+
+.container form input[type="number"],
+select,
+label {
+  font-size: 25px;
+  width: 23vw;
+  margin-bottom: 23px;
+}
+
+.btn {
+  width: 144px;
+  padding: 5px 8px;
+  font-size: 20px;
+  background: #e0d0f5;
+  color: black;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.output {
+  display: none;
+}
+
+.output table {
+  width: 50vw;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+.output table th {
+  padding: 3px;
+}
+
+/* Main ends */
+
+/* Footer Starts */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  column-gap: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Ends */
+
+/* Errors styles */
+#errors {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Started */
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+
+  .container {
+    max-width: 95vw;
+  }
+
+  .container form input[type="number"],
+  select,
+  label {
+    width: 80vw;
+  }
+
+  .output table {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 10px;
+  }
+
+  main {
+    padding: 4px;
+  }
+
+  footer {
+    padding: 10px 10px;
+  }
+
+  .container {
+    max-width: 95vw;
+  }
+
+  .container form input[type="number"],
+  select,
+  label {
+    width: 80vw;
+  }
+
+  .output table {
+    width: 100vw;
+  }
+}
+
+/* Responsive Ends */
